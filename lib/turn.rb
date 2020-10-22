@@ -42,4 +42,9 @@ def turn(board)
   elsif index.between?(0,8)
     true
   end
+  if board[index] == " " || board[index] == "" || board[index] == nil
+    false
+  else board[index] == "X" || board[index] == "O"
+    true
+  end
 end
