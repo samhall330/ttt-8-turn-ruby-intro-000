@@ -11,12 +11,6 @@ def input_to_index(user_input)
   index = user_input.to_i - 1
 end
 
-def move(array, index, value = "X")
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  array[index] = value
-  return board
-end
-
 def valid_move?(board, index)
   if position_taken?(board, index) == true
     false
@@ -32,3 +26,10 @@ def position_taken?(board, index)
     true
   end
 end
+
+def move(array, index, value = "X")
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+  array[index] = value
+  return board
+end
+
