@@ -15,6 +15,6 @@ move(board, index, "X")
 
 index = input_to_index (user_input)
 
-move (board, index, value)
+move = (board, index, value)
 
 display_board(board)
