@@ -40,5 +40,6 @@ def turn(board)
     until valid_move?(board, index) != false
     turn(board)
     end
+    move(board, index, "X")
     display_board(board)
 end
