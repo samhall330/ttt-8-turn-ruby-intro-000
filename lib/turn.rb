@@ -32,3 +32,7 @@ def move(array, index, value = "X")
   array[index] = value
   return board
 end
+
+def turn(board)
+  puts "Please enter 1-9:"
+end
